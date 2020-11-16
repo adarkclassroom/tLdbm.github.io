@@ -1,78 +1,48 @@
-@import url('https://fonts.googleapis.com/css?family=Noto Sans JP');
-input[type=text], select{
-    text-align: center;
-    
-    display: inline-block;
-    border: 1px solid transparent;
-    background-color: transparent;
-    box-sizing: border-box;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-}
-.container{
-    font-family: 'Noto Sans JP', Calibri,sans-serif;
-}
-#name{
-    width: 375px;
-    padding: 0 7px;
-    margin: 0 0;
-    font-weight: bold;
-    font-size: 14px;
-    font-family:  'Noto Sans JP', Calibri,sans-serif;
-}
-#desc{
-    width: 350px;
-    padding: 0 1px;
-    margin: -1 0;
-    font-size: 12px;
-    font-family:  'Noto Sans JP', Calibri,sans-serif;
-}
+<!DOCTYPE html>
 
-.boxlefttext{
-    width: 100%; 
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    margin-right: 200px;
-    margin-top: 0;
-    font-size: 10px;
-    float: left;
-    text-align: left;
-    background-color: transparent;
-    border: none;
+<html>
+    <head>
+        <title>Discord Bio Maker (beta)</title>
+        <link rel="stylesheet" type="text/css" href="index2.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <center>
+        <div class=container>
+            <h1 class="title">Welcome to Discord Bio Maker</h1>
+            <p class="body">Create a short Discord Bio card here! <br> <em>there is currently no way to download your bio card. I'm working on adding this in the future. For now, please screenshot your card.</em></p>
 
-}
-.box{
-    width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    float: left;
-    text-align: left;
-    background-color: transparent;
-    border: none;
-}
+            <div class="profileoutline">
+                <form>
+                    <input type="text" id="name" placeholder="E.g. Ethiera">
+                    <!--<input type="text" id="desc" placeholder="E.g. I'm a skilled programmer">-->
+                    <center>                    
+                        <p contenteditable="true" id="desc">E.g. She/Her/Hers</p>
+                    </center>
 
-input[type=text]:focus{
-    border: transparent;
-    border-bottom: 3px solid black;
-}
-.profileoutline{
-    width: 400px;
-    padding: 10px 5px;
-    margin: 8px 0;
-    display: inline-block;
-    background-color: lavender;
-    border: 1px solid black;
-    border-radius: 4px;
-}
-
-
-.container{
-    width: 80%;
-    text-align: center;
-}
-.label{
-    font-size: 14px;
-    padding-bottom: 1px;
-}
+                    <br>
+                    <!--<label for="likes" class="leftlabel">Likes:</label>
+                    <textarea id="likes" placeholder="likes go here" class="boxleft" rows="5"></textarea>-->
+                    <!--<div class="boxleft">-->
+                        <div class="col-xs-5 col-sm-5 col-lg-5">
+                            <div class="box">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp Likes
+                               <p contenteditable="true" class="boxlefttext">-Something you like <br> -Something you like</p>
+                               <br>
+                               &nbsp&nbsp&nbsp&nbsp&nbsp Dislikes
+                               <p contenteditable="true" class="boxlefttext">-Something you dislike <br> -Something you dislike</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-7 col-sm-7 col-lg-7" style="text-align:justify;">
+                            <p contenteditable="true">Something about you.....<br><br><br><br><br><em style="color:rgb(96, 96, 126); font-size:10px;">this box will grow larger if you type more!</em></p>
+                        </div>
+                </form>
+            </div>   
+        </div>
+        
+    </center>    
+    </body>
+</html>
