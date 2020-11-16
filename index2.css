@@ -57,7 +57,7 @@ input[type=text]:focus{
     border: transparent;
     border-bottom: 3px solid black;
 }
-.profileoutline{
+/*.profileoutline{
     width: 400px;
     padding: 10px 5px;
     margin: 8px 0;
@@ -65,9 +65,17 @@ input[type=text]:focus{
     background-color: rgb(201, 240, 253);
     border: 1px solid black;
     border-radius: 4px;
+}*/
+
+.profileoutline{
+    width: 400px;
+    padding: 10px 5px;
+    margin: 8px 0;
+    display: inline-block;
+    /*background-color: rgb(201, 240, 253);*/
+    border: 1px solid black;
+    border-radius: 4px;
 }
-
-
 .container{
     width: 80%;
     text-align: center;
@@ -75,4 +83,17 @@ input[type=text]:focus{
 .label{
     font-size: 14px;
     padding-bottom: 1px;
+}
+button{
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: transparent;
+    transition: ease 0.3s;
+}
+button:hover{
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: lightgrey;
 }
