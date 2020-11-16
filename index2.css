@@ -10,21 +10,23 @@ input[type=text], select{
     transition: 0.5s;
     outline: none;
 }
-
+.container{
+    font-family: 'Noto Sans JP', Calibri,sans-serif;
+}
 #name{
     width: 375px;
     padding: 0 7px;
     margin: 0 0;
     font-weight: bold;
     font-size: 14px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family:  'Noto Sans JP', Calibri,sans-serif;
 }
 #desc{
     width: 350px;
     padding: 0 1px;
     margin: -1 0;
     font-size: 12px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family:  'Noto Sans JP', Calibri,sans-serif;
 }
 
 .boxlefttext{
