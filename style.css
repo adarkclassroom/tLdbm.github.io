@@ -3,12 +3,9 @@ input[type=text], select{
     text-align: center;
     
     display: inline-block;
-    border: 1px solid transparent;
+    border: none;
     background-color: transparent;
-    box-sizing: border-box;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
+    
 }
 .container{
     font-family: 'Noto Sans JP', Calibri,sans-serif;
@@ -20,6 +17,7 @@ input[type=text], select{
     font-weight: bold;
     font-size: 14px;
     font-family:  'Noto Sans JP', Calibri,sans-serif;
+    
 }
 #desc{
     width: 350px;
@@ -53,10 +51,6 @@ input[type=text], select{
     border: none;
 }
 
-input[type=text]:focus{
-    border: transparent;
-    border-bottom: 3px solid black;
-}
 /*.profileoutline{
     width: 400px;
     padding: 10px 5px;
@@ -70,7 +64,7 @@ input[type=text]:focus{
 .profileoutline{
     width: 400px;
     padding: 10px 5px;
-    margin: 8px 0;
+    margin: 8px 2px;
     display: inline-block;
     /*background-color: rgb(201, 240, 253);*/
     border: 1px solid black;
@@ -97,3 +91,4 @@ button:hover{
     border-radius: 4px;
     background-color: lightgrey;
 }
+
