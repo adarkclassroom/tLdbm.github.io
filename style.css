@@ -66,16 +66,19 @@ input[type=text], select{
 .profileoutline{
     width: 400px;
     padding: 10px 5px;
-    margin: 8px 2px;
+    margin: 8px 2px 8px 2px;
     display: inline-block;
     /*background-color: rgb(201, 240, 253);*/
     border: 1px solid black;
     border-radius: 4px;
 }
-#print{}
+#print{
+    transition: 0.3s;
+}
 .label{
     font-size: 14px;
     padding-bottom: 1px;
+
 }
 button{
     margin-top: 20px;
@@ -90,4 +93,3 @@ button:hover{
     border-radius: 4px;
     background-color: lightgrey;
 }
-
