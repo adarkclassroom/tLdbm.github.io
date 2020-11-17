@@ -13,7 +13,7 @@ var colors = [
 ];
 var colorIndex = 0;
 function changeColor() {
-    var col = document.getElementById("bo");
+    var col = document.getElementById("print");
     if( colorIndex >= colors.length ) {
         colorIndex = 0;
     }
