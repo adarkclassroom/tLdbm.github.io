@@ -8,6 +8,8 @@ input[type=text], select{
     
 }
 .container{
+    width: 80%;
+    text-align: center;
     font-family: 'Noto Sans JP', Calibri,sans-serif;
 }
 #name{
@@ -70,10 +72,7 @@ input[type=text], select{
     border: 1px solid black;
     border-radius: 4px;
 }
-.container{
-    width: 80%;
-    text-align: center;
-}
+#print{}
 .label{
     font-size: 14px;
     padding-bottom: 1px;
