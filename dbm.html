@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>BioCard Maker</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+    <body>
+        <center>
+        <div class=container>
+            <h1 class="title">Welcome to the BioCard Maker</h1>
+            <p class="body">Create a short bio/introduction card here! </p>
+            <p style="text-align: justify; font-size: 10px;">Clicking the print button once you are done will open the finalised image in a new tab. You will then be able to save it.
+            <br>
+            Note: due to html2canvas being kind of weird, the <strong>"printed" image will sometimes display weirdly</strong> (e.g., without the entire card being screenshotted. If this happens, <strong> simply click the print button again and it should be fixed after one or two tries </strong>.
+            <br>
+            Mobile users: the site is not yet optimised for mobile use (the "print" button doesn't function properly). For now, please just screenshot your card.</p>
+
+            <!--<div id="print" style="border-color: transparent; padding: 5px 10px;">
+            --><div class="profileoutline" id="print">
+                <form>
+                    
+                    
+                    <center>                    
+                        <input type="text" id="name" placeholder="E.g. Erinna" spellcheck="false">
+                        <input type="text" id="desc" placeholder="E.g. She/Her/Hers">
+                    </center>
+
+                    <br>
+                    <!--the profile card-->
+                        <div class="col-xs-5 col-sm-5 col-lg-5" spellcheck="false">
+                            <div class="box">
+                                &nbsp&nbsp&nbsp&nbsp Birthday
+                                <p contenteditable="true" class="boxlefttext">E.g. January 1st, 2020</p>
+                               <br>
+                                &nbsp&nbsp&nbsp&nbsp Likes
+                               <p contenteditable="true" class="boxlefttext">-Something you like <br> -Something you like</p>
+                               <br>
+                               &nbsp&nbsp&nbsp&nbsp Dislikes
+                               <p contenteditable="true" class="boxlefttext">-Something you dislike <br> -Something you dislike</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-7 col-sm-7 col-lg-7" style="text-align:justify; font-size: 12px;" spellcheck="false">
+                            <p contenteditable="true">Something about you.....<br><em style="color:rgb(96, 96, 126); font-size:10px;">this box will grow larger if you type more!</em></p>
+                        </div>
+                    </form>
+
+                    
+            </div>   
+            </div>
+        </div>
+        <button onclick="changeColor();">Change color</button>
+        <button onclick="print();">Print</button>
+        <br><br><br>
+        <p style="font-family: 'Noto Sans JP', Calibri,sans-serif; font-size: 10px"> Designed and made by @waclyu#5448, with special thanks to @Ethiera#7969</p>
+    </center>  
+    
+    <script src="html2canvas.min.js"></script> 
+    <script src="main.js"></script> 
+
+
+    </body>
+</html>
