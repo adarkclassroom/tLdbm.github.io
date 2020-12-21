@@ -1,0 +1,5 @@
+AuthUserFile
+/path/to/htpasswd/file/.htpasswd
+AuthName "tldbm.github.io/dbm"
+AuthType Basic
+require valid-user
